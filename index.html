@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-REACT</title>
+</head>
+<body>
+    <div id="root">Not rendered</div>
+    <!-- </div>
+    <script>
+        const heading = document.createElement("h1");//create tag using JS
+        heading.innerHTML = "Hello";
+
+        document.getElementById("root");
+
+        root.appendChild(heading);//i.e appending h1 to div with id=root
+    </script> -->
+</body>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script>
+    const heading = React.createElement("h1",{},"Hello React");//create tag using React library
+    //{..} content written in { } will be a tag attributes will be rendered/placed inside specified HTML tag
+
+    console.log(heading);//It will display JS object
+    //i.e react elements are nothing but a objects
+
+    const root = ReactDOM.createRoot(document.getElementById("root"));//find location to place react element(i.e heading for this eg) in DOM
+
+    root.render(heading);//This api will help to place heading at root location i.e in the DOM
+    //React will replace the already existed content from dom and replace with heading
+</script>
+
+</html>
+
+<!-- By doing this ,react want to write entire HTML in js 
+But its not developer friendly
+SO JSX comes in picture  -->
