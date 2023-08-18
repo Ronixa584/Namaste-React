@@ -1,0 +1,38 @@
+{
+  "name": "d3",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ronixa584/WEB-DEVELOPMENT.git"
+  },
+  "author": "Aniket Patil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ronixa584/WEB-DEVELOPMENT/issues"
+  },
+  "homepage": "https://github.com/Ronixa584/WEB-DEVELOPMENT#readme",
+  "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "autoprefixer": "^9.8.6",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "parcel": "^2.9.3",
+    "postcss": "^8.4.26",
+    "postcss-cli": "^10.1.0",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "classnames": "^2.3.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist": [
+    "last 2 Chrome versions"
+  ]
+}
