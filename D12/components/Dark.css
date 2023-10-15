@@ -1,0 +1,39 @@
+/* :root {
+  --bg-color: #fff;
+  --text-color: #000;
+}
+
+[data-theme="dark"] {
+  --bg-color: #3F3F3F;
+  --text-color: #fff;
+}
+
+.Header {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+} */
+
+/* Dark Mode */
+:root {
+  --background-color: #333;
+  --font-color: #eee;
+  --link-color: lightblue;
+}
+
+/* Light Mode */
+[data-theme="light"] {
+  --background-color: #eee;
+  --font-color: #333;
+  --link-color: cornflowerblue;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+
+a {
+  color: var(--link-color);
+}
