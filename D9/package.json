@@ -13,10 +13,6 @@
   },
   "author": "Aniket Patil",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Ronixa584/WEB-DEVELOPMENT/issues"
-  },
-  "homepage": "https://github.com/Ronixa584/WEB-DEVELOPMENT#readme",
   "devDependencies": {
     "@babel/core": "^7.22.9",
     "autoprefixer": "^9.8.6",
