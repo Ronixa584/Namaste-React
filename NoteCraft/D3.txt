@@ -1,0 +1,110 @@
+//For production we need optimization,bundle,minification,etc
+
+Bundlers
+Parcel,vite,webpack,etc
+
+cerate react app uses webpack bundler
+
+Package managers
+npm ,yarn
+
+npm init -y  //-y will skip options
+
+npm install -D parcel  //parcel will be installed as devDependancy in package.json .We used this because we only want parcel at development side not at production site
+  "devDependencies": {
+    "parcel": "^2.9.3"  //check meaning of ^ in net
+  }
+
+^2.9.3l
+greater than this version is good/okay for project
+2.9.3
+Only this version is good/okay for project
+
+package-lock.json??
+package.json will update parcel if update is availble so 
+Initial ^2.9.3
+After updation of parcel ^2.9.4
+But may our project needs initial one .SO ,for that package-lock.json required
+This will locks a certain version for your project
+Don't insert in gitgnore ,you have to put package-lock.json at project place
+
+code -> git -> server
+code ->server   wrongest method/server will die/expload 
+
+So git needs all this packages.DO this to avoid meme "It works on my PC but not on others"
+
+node_modules is a database for npm 
+From this all superpowers will come
+don't push/share node_modules to anyone or repo.
+This is because node_modules will be presnt on server and whatever packages required from node_modules are mentions in package-lock.json and package.json  >So put only this json file
+
+NOTE
+Never edit node_modules and package-lock.json
+
+npm install react  //This shows we want react globally i.e both development and production level
+npm i react-dom   //Installling react dom
+npx parcel index.html  //Will ignite/create/run server with link,
+npx parcel build index.html   //production level build.The all production files will be pushed at dist folder
+//Errors
+//Import/export error   and react-dom/client
+//type = modules   i.e script types HTML
+//Also remove index.js from  package.json
+// i.e  "main": "App.js",
+//Do this i.e removing App.js while npx parcel build index.html
+
+Only module can do import and export
+
+Parcel
+Parcel cache:This files are used for working of loading of server
+HMR - Hot Module Reload helps to update website for every change
+File watcher algorithm written in C++ helps to keep terack on files in projects and loads server contimusoly using parcerl
+Push parcel-cache in gitigonore  (Notsure)
+What is heavy objects for website????
+media like images ,videos ,gif ,etc
+
+//HMR - Hot Module Replacement helps to update website for every change
+//File watcher algorithm written in C++ helps to keep terack on files in projects and loads server contimusoly using parcerl
+//Bundling
+//MINIFY
+//Removing console.log
+//Cleaning code
+//Superfast build algorithm
+//Dev and production build\
+//Parcel does all optimization like files,images,etc
+//Caching while development i.e Parcel cache:This files are used for working of loading of server
+//compressiion of files eg var number=10  =>  var n=10 (this file present in dist checak after build )
+//Compatible with older browsers
+//Our website is on now running on HTTp but we can run it on HTTPS in localhoast
+//eg npx parcel index.html --https  (used in testing phase)
+//Port numbers are also manged by parcel .They are not fixed
+//Consisting hashing
+//Zero config bundler
+//Tree shaking - Removing un-wanted code
+//
+//All this above functions are present in node_modules
+//Parcel acts as OS the organizer
+//If modi is react then parcel(bundler) is amit shaha
+//This all are done by parcel
+
+
+NOTE
+Anything generated automatically or generate on server will be pushed on gitigonre
+
+Interview imp word
+Transitive dependancies
+eg. PM wins due to MLA  ,MLA due to local leader ,local leader due to peoples
+Package manager take care of Transitive dependancies of code
+
+What makes react webapp fast?
+virtual DOM
+Bundelers
+npm modules
+and many other tools/components help react for speedup
+
+
+
+
+In short Parcel is beast
+https://browserslist.dev/?q=bGFzdCAyIENocm9tZSB2ZXJzaW9ucw%3D%3D
+QUestion cursity
+Who develpoed parcel
